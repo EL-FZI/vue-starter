@@ -1,10 +1,13 @@
 <template>
-
-  <h2>Générateur de sandwich</h2>
+  <div class="container-generate">
+    <h2>Générateur de sandwich</h2>
     <button @click="addNewRandomSandwich">Ajouter</button>
-  <div v-if="sandwich">
-    <p>{{ sandwich.bread }}, {{ sandwich.sauce }}, {{ sandwich.cheese }}, {{ sandwich.extra }}</p>
-    <button @click="save">Sauvegarder</button>
+
+    <div v-if="sandwich" class="listing">
+      <p>{{ sandwich.bread }}, {{ sandwich.sauce }}, {{ sandwich.cheese }}, {{ sandwich.extra }}</p>
+      <button @click="save">Sauvegarder</button>
+    </div>
+
   </div>
 </template>
 
@@ -45,3 +48,34 @@ const addNewRandomSandwich = () => {
 
 
 </script>
+
+<style scoped>
+.container-generate {
+  padding: 2rem;
+  text-align: center;
+}
+h2 {
+  margin-bottom: 1rem;
+}
+
+button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.listing {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-radius: 6px;
+}
+</style>

@@ -1,11 +1,8 @@
-<script setup lang="ts">
+<template>
+  <SandwichToAdd></SandwichToAdd>
+</template>
+<script setup>
+
+import SandwichToAdd from "@/components/SandwichToAdd.vue";
 
 </script>
-
-<template>
-
-</template>
-
-<style scoped>
-
-</style>
