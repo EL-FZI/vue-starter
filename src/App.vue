@@ -1,10 +1,9 @@
 <template>
-    <div>
-      <nav>
-        <router-link to="/">Accueil</router-link> |
-        <router-link to="/saved">Sauvegardés</router-link> |
-        <router-link to="/backoffice">Backoffice</router-link>
-      </nav>
-      <router-view />
+  <div>
+    <Header/>
+    <router-view />
     </div>
   </template>
+<script setup lang="ts">
+import Header from "@/Layouts/Header.vue";
+</script>

@@ -1,6 +1,6 @@
 <template>
-  <test></test>
+<Home/>
 </template>
 <script setup>
-import Test from "@/pages/test.vue";
+import Home from "@/pages/Home.vue";
 </script>
