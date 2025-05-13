@@ -1,5 +1,5 @@
 <template>
-<Backoffice></Backoffice>
+  <Backoffice/>
 </template>
 
 <script setup lang="ts">

@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import { reactive } from 'vue'
+import {reactive} from 'vue'
 
 const categories = ['bread', 'sauce', 'cheese', 'extra'];
 type Category = typeof categories[number]

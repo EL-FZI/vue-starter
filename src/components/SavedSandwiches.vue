@@ -1,7 +1,7 @@
 <template>
   <div class="saved-container">
     <h2>Sandwichs Sauvegardés</h2>
-    <input v-model="filter" placeholder="Filtrer par ingrédient" />
+    <input v-model="filter" placeholder="Filtrer par ingrédient"/>
     <ul>
       <li v-for="sandwich in filteredByIngredients" :key="sandwich.id">
         {{ sandwich.bread }}, {{ sandwich.sauce }}, {{ sandwich.cheese }}, {{ sandwich.extra }}
@@ -28,8 +28,8 @@ const savedSandwiches = ref<Sandwich[]>(JSON.parse(localStorage.getItem('sandwic
 
 const filteredByIngredients = computed(() =>
     savedSandwiches.value.filter(sandwich =>
-    Object.values(sandwich).some(val => val.toLowerCase().includes(filter.value.toLowerCase()))
-))
+        Object.values(sandwich).some(val => val.toLowerCase().includes(filter.value.toLowerCase()))
+    ))
 </script>
 
 

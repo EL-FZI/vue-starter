@@ -1,5 +1,5 @@
 <template>
-<SavedSandwiches></SavedSandwiches>
+  <SavedSandwiches/>
 </template>
 
 <script setup lang="ts">

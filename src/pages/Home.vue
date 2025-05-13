@@ -1,5 +1,5 @@
 <template>
-  <SandwichToAdd></SandwichToAdd>
+  <SandwichToAdd/>
 </template>
 <script setup>
 

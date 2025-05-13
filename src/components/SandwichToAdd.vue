@@ -22,7 +22,7 @@ interface Sandwich {
 }
 
 import {ref} from "vue";
-import { breads, sauces, cheeses, extras } from '@/ingredientsList.ts'
+import {breads, sauces, cheeses, extras} from '@/ingredientsList.ts'
 
 const sandwich = ref<Sandwich | null>(null);
 const savedSandwiches = ref<Sandwich[]>(JSON.parse(localStorage.getItem('sandwiches') || '[]'))
@@ -39,12 +39,12 @@ const addNewRandomSandwich = () => {
   }
 }
 
-  const save = () => {
-    if (sandwich.value) {
-      savedSandwiches.value.push(sandwich.value)
-      localStorage.setItem('sandwiches', JSON.stringify(savedSandwiches.value))
-    }
+const save = () => {
+  if (sandwich.value) {
+    savedSandwiches.value.push(sandwich.value)
+    localStorage.setItem('sandwiches', JSON.stringify(savedSandwiches.value))
   }
+}
 
 
 </script>
@@ -54,6 +54,7 @@ const addNewRandomSandwich = () => {
   padding: 2rem;
   text-align: center;
 }
+
 h2 {
   margin-bottom: 1rem;
 }
