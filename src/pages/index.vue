@@ -1,3 +1,6 @@
 <template>
-  <h1>Happy Coding</h1>
+  <test></test>
 </template>
+<script setup>
+import Test from "@/pages/test.vue";
+</script>
